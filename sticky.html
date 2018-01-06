@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<link rel=stylesheet href="sticky.css" type="text/css">
+		<script src="sticky.js"></script>
+	</head>
+	<body onload="getValueLocal()" onunload="saveToLocalStorage()">
+		<img style="width:110px; height:110px; float: right;" src="bascket1.jpg " id="imgbascket" alt="" id="imgdiv" ondrop="drop(event)" ondragover="allowDrop(event)">
+		<center>
+			<b>Choose your Note background Color</b>
+			<br><br>
+			<input type="color" id="colorchoosen" name="favcolor" value="#ffffff"/>
+			<br><br>
+			<button id="new" class="button" onclick="add_newDiv()">Add Note</button>
+		</center>
+		<br><br>
+		<div id="addedNotes">
+		</div>
+	</body>
+</html>
